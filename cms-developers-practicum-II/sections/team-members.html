@@ -1,0 +1,49 @@
+<!--
+  templateType: section
+  label: Team members
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/team-members.jpg
+  description: "Left-aligned heading above a team members module."
+-->
+{% dnd_section
+  max_width={{ context.max_width || 1280 }},
+  padding={
+    "default": {
+      "top": 80,
+      "right": 20,
+      "bottom": 80,
+      "left": 20
+    },
+    "mobile": {
+      "top": 40,
+      "right": 20,
+      "bottom": 60,
+      "left": 20
+    }
+  },
+  vertical_alignment="MIDDLE"
+%}
+  {% dnd_column %}
+      {% dnd_row %}
+
+      {% dnd_module path='@hubspot/rich_text' %}
+        {% module_attribute 'html' %}
+          <div style="text-align: left">
+            {{ context.content || "<h2>Our Team</h2>" }}
+          </div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+
+      {% end_dnd_row %}
+
+      {% dnd_row %}
+
+        {% dnd_module "team"
+           path="../modules/team"
+        %}
+        {% end_dnd_module %}
+
+      {% end_dnd_row %}
+
+    {% end_dnd_column %}
+{% end_dnd_section %}

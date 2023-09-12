@@ -1,0 +1,69 @@
+{% require_css %}
+<style type="text/css">
+  {% scope_css %}
+  
+  {% if module.style.cards.border %}
+    .our-team .member-box {
+      {{ module.style.cards.border.css }}
+    }
+  {% endif %}
+
+  {% if module.style.members.background_color.color %}
+  .our-team .member-box .content{
+    background-color: rgba({{ module.style.members.background_color.color | convert_rgb }}, {{ module.style.members.background_color.opacity / 100 }});
+  }
+  {% endif %}
+  
+  {% if module.style.members.text_color.color %}
+  .our-team .member-box .content h3,
+  .our-team .member-box .content p{
+    color: rgba({{ module.style.members.text_color.color | convert_rgb }}, {{ module.style.members.text_color.opacity / 100 }});
+  }
+  {% endif %}
+
+  {% end_scope_css %}
+  
+  /* ############################################ */
+  
+  .our-team .member-box {
+    border: 1px solid {{ theme.global_colors.primary.color }};
+  }
+  .our-team .member-box .content{
+    background-color: {{ theme.global_colors.primary.color }};
+  }
+  .our-team .member-box .content h3,
+  .our-team .member-box .content p{
+    color: {{ theme.global_colors.tertiary.color }};
+  }
+</style>
+{% end_require_css %}
+
+<div class="our-team">
+  {% for item in module.card %}
+    <div class="member-box">
+      <div class="photo">
+        {% if item.member_image.src %}
+          {% set loadingAttr = item.member_image.loading != 'disabled' ? 'loading="{{ item.member_image.loading }}"' : '' %}
+          <img srcset="{{ resize_image_url(item.member_image.src, 318) }} 318w,
+               {{ resize_image_url(item.member_image.src, 340) }} 340w,
+               {{ resize_image_url(item.member_image.src, 358) }} 358w,
+               {{ resize_image_url(item.member_image.src, 362) }} 362w"
+             sizes= "(max-width: 374px) 340px,
+                     (max-width: 767px) 358px,
+                     (max-width: 1023px) 318px,
+                     362px"
+             src="{{ item.member_image.src }}"
+             alt="{{ item.member_image.alt }}"
+             width="{{ item.member_image.width }}"
+             height="{{ item.member_image.height }}"
+             {{ loadingAttr }}
+             />
+        {% endif %}
+      </div>
+      <div class="content">
+        <h3>{{ item.member_name }}</h3>
+        <p>{{ item.member_position }}</p>
+      </div>
+   </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,48 @@
+.our-team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.our-team .member-box{
+  width: 23.99%;
+  margin-right: 0.8%;
+  margin-bottom: 15px;
+}
+.our-team .member-box .photo{
+  line-height: 0;
+}
+.our-team .member-box .photo > img{
+  width: 100%;
+  height: auto;
+}
+.our-team .member-box .content{
+  padding: 15px;
+}
+.our-team .member-box .content h3{
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.our-team .member-box .content p{
+  margin: 0;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1040px){
+  .our-team .member-box{
+    width: 32.2%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .our-team .member-box{
+    width: 48%;
+    margin-right: 1.5%;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .our-team .member-box{
+    width: 100%;
+    margin-right: 0;
+  }
+}

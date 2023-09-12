@@ -1,0 +1,348 @@
+[ {
+  "id" : "8989f99f-53e9-a9d0-2f3d-cbea1713db6d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5a95ca41-3f62-1948-42fb-e773d1725a30",
+    "name" : "cards",
+    "display_width" : null,
+    "label" : "Cards",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "955310d9-9791-3195-bc37-b68e085654fa",
+      "name" : "border",
+      "display_width" : null,
+      "label" : "Border",
+      "required" : false,
+      "locked" : false,
+      "allow_custom_border_sides" : false,
+      "type" : "border",
+      "default" : {
+        "top" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "bottom" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "left" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "right" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "border" : {
+        "top" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "bottom" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "left" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "right" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "9f1f4e39-ef95-b451-12d9-7157c9b8a513",
+    "name" : "members",
+    "display_width" : null,
+    "label" : "Members",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "36eed2f9-6971-7cbf-3a7a-aae6e97485e7",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "7e8c6ef5-8b43-2135-5367-dd06fb750860",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#425b76",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "text_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#425b76",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cards" : {
+      "border" : {
+        "top" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "bottom" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "left" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        },
+        "right" : {
+          "style" : "solid",
+          "color" : "#425b76",
+          "opacity" : 100,
+          "width" : {
+            "value" : 1,
+            "units" : "px"
+          }
+        }
+      }
+    },
+    "members" : {
+      "text_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "background_color" : {
+        "color" : "#425b76",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "219ea677-737f-8a39-1a70-6a6299aa7ae5",
+  "name" : "card",
+  "display_width" : null,
+  "label" : "Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 50,
+    "sorting_label_field" : "54fabff0-04b5-0278-23f9-c07e1b44329c",
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "6faf4862-086f-cbb0-6fed-bb06b32793b4",
+    "name" : "member_image",
+    "display_width" : null,
+    "label" : "Member Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    }
+  }, {
+    "id" : "54fabff0-04b5-0278-23f9-c07e1b44329c",
+    "name" : "member_name",
+    "display_width" : null,
+    "label" : "Member Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Oliver"
+  }, {
+    "id" : "a58d392e-60a9-a541-6385-a9f9326534d0",
+    "name" : "member_position",
+    "display_width" : null,
+    "label" : "Member Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "CEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  }, {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  }, {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  }, {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  }, {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  }, {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://20854868.fs1.hubspotusercontent-na1.net/hubfs/20854868/cat-3-1.jpg",
+      "alt" : "cat-3-1",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 400,
+      "max_width" : 600,
+      "max_height" : 400
+    },
+    "member_name" : "Oliver",
+    "member_position" : "CEO"
+  } ]
+} ]

@@ -1,0 +1,23 @@
+<!--
+  templateType: page
+  label: Developers Practicum Demo II
+  isAvailableForNewContent: true
+  screenshotPath: ../images/template-previews/home.jpg
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{% dnd_area "dnd_area_5"
+   label="Main section"
+%}
+
+   {# Two column image and text #}
+   {% include_dnd_partial path='../sections/two-column-image-and-text.html' %}
+
+    {# Team members #}
+   {% include_dnd_partial path='../sections/team-members.html' %}
+
+{% end_dnd_area %}
+
+{% endblock body %}

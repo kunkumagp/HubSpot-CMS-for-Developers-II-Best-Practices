@@ -1,0 +1,65 @@
+<!--
+  templateType: section
+  label: Two column image and text
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/two-column-image-and-text.jpg
+  description: "Two column content containing an image on the left and rich text on the right."
+-->
+{% dnd_section
+  max_width={{ context.max_width || 1280 }},
+  padding={
+    "default": {
+      "top": 80,
+      "right": 20,
+      "bottom": 80,
+      "left": 20
+    },
+    "mobile": {
+      "top": 60,
+      "right": 20,
+      "bottom": 40,
+      "left": 20
+    }
+  },
+  vertical_alignment="MIDDLE"
+%}
+  {% dnd_column
+       offset=0,
+       width=6
+    %}
+      {% dnd_row %}
+
+        {% dnd_module "linked_image"
+           path="@hubspot/linked_image",
+           img={
+              "src": get_asset_url('../images/cats.jpg'),
+              "alt": "Cats 1",
+              "loading": "disabled",
+              "max_width": 675,
+              "max_height": 450,
+              "size_type": "auto_custom_max"
+           }
+         %}
+        {% end_dnd_module %}
+
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+
+    {% dnd_column
+       offset=6,
+       width=6,
+    %}
+      {% dnd_row %}
+
+       {% dnd_module 
+          path='@hubspot/rich_text' %}
+         {% module_attribute 'html' %}
+           <div style="text-align: left; margin-top: 15px;">
+             {{ context.content || "<h1>It's cat time</h1><p>Cats often feel love quite strongly for their owners and other companions.</p>" }}
+           </div>
+         {% end_module_attribute %}
+      {% end_dnd_module %}
+
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+{% end_dnd_section %}

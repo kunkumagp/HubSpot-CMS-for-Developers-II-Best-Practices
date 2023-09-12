@@ -1,0 +1,29 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+    label: Header
+-->
+<!-- Begin partial -->
+
+<!-- Skip to content link -->
+<a href="#main-content" class="header__skip">Skip to content</a>
+
+<!-- Header -->
+<header class=header>
+  <div class="content-wrapper">
+    <div class="logo">
+      <img src="{{ resize_image_url(brand_settings.primaryLogo.src, 0, 0, 173) }}" alt="{{ brand_settings.primaryLogo.alt }}" width="{{brand_settings.primaryLogo.width}}" height="{{brand_settings.primaryLogo.height}}" />
+    </div>
+    
+    <div class="navbar">
+      <div class="quote">
+        {% module "text" path="@hubspot/text" value="<p>There is no friend as loyal as a book.</p><br/> - <i>Ernest Hemingway</i>" %}
+      </div>
+
+      <div class="menu">
+        {% module "cat_menu" path="@hubspot/simple_menu" orientation="horizontal" %}
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End partial -->

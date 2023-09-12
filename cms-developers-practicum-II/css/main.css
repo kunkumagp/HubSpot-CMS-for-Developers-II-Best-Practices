@@ -1,0 +1,29 @@
+{% include './_header.css' %}
+{% include './_footer.css' %}
+{% include './_layout.css' %}
+
+{% set body_bg_color = theme.body_bg.color %}
+{% set main_font = theme.global_fonts.primary %}
+{% set primary_color = theme.global_colors.primary.color %}
+{% set secondary_color = theme.global_colors.secondary.color %}
+{% set tertiary_color = theme.global_colors.tertiary.color %}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: {{ body_bg_color }};
+  {{ main_font.css }};
+}
+
+.content-wrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

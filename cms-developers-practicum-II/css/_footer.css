@@ -1,0 +1,16 @@
+.footer{
+  padding: 30px 0;
+  background-color: {{ theme.header_and_footer.background_color.color }};
+}
+.footer .copyright{
+  color: {{ theme.global_colors.tertiary.color }};
+}
+.footer .copyright p{
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .footer .copyright{
+    text-align: center;
+  }
+}
