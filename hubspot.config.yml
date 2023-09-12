@@ -1,0 +1,14 @@
+defaultPortal: Geeth-Engaging
+portals:
+  - name: Geeth-Engaging
+    portalId: 43811880
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CLnn-8GoMRIOAAUAQAAAAGwAQAJYAgEYqIjyFCDh2OUcKO7pDDIUCmNFH9wX0ft5D6G3AUrW4X5n8u86MAAABEEAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAPGBQAABEAABA_BgGABAgA0IUeNOEVkMT774X9fAHpnkrfue3PzNKA25hMVIAWgA
+        expiresAt: '2023-09-12T07:15:41.647Z'
+    personalAccessKey: >-
+      CiRjZDc2Zjk5My0yNzczLTQxOGQtODVhOC05OTVkMjhmNTZiOTAQqIjyFBjh2OUcKhkABeaRgmKRRvp4N7DceVVM1o9IBLvpIqMJSgNuYTE
+    sandboxAccountType: null
+    parentAccountId: null
