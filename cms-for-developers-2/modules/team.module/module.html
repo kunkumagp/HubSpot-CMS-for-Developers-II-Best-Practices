@@ -1,0 +1,20 @@
+<div class="our-team">
+  {% for item in module.card %}
+
+  <div class="member-box">
+
+    <div class="photo">
+      {% if item.member_image.src %}
+        <img src="{{ item.member_image.src }}" alt="{{ item.member_image.alt }}">
+      {% endif %}
+    </div>
+
+    <div class="content">
+      <h3>{{ item.member_name }}</h3>
+      <p>{{ item.member_position }}</p>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+

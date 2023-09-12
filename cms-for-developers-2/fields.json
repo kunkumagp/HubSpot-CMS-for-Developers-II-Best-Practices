@@ -1,1 +1,87 @@
-[ ]
+[
+  {
+    "label":"Global Font",
+    "name":"global_font",
+    "type":"group",
+    "children":[
+      {
+        "label": "Font Family",
+        "name": "font_family",
+        "type": "font"
+      }
+    ]
+  },
+  {
+    "label":"Header and Footer",
+    "name":"header_and_footer",
+    "type":"group",
+    "children":[
+      {
+        "label": "Header",
+        "name": "header",
+        "type": "group",
+        "children": [
+          {
+            "label": "Background color",
+            "name": "background_color",
+            "type": "color",
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "default": {
+              "color": "#EEEEEE"
+            }
+          },
+          {
+            "label": "Text color",
+            "name": "text_color",
+            "type": "color",
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "default": {
+              "color": "#000"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Footer",
+        "name": "footer",
+        "type": "group",
+        "children": [
+          {
+            "label": "Background color",
+            "name": "background_color",
+            "type": "color",
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "default": {
+              "color": "#EEEEEE"
+            }
+          },
+          {
+            "label": "Text color",
+            "name": "text_color",
+            "type": "color",
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "default": {
+              "color": "#000"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
